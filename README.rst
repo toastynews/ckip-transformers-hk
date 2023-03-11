@@ -8,18 +8,18 @@ Models
 ------
 
 There are two versions of this model.
-- HK - trained on only Hong Kong text (HKCanCor and CityU)
-- HKT - trained on a combination of Hong Kong and Taiwan text (HKCanCor, CityU and AS)
+* HK - trained on only Hong Kong text (HKCanCor and CityU)
+* HKT - trained on a combination of Hong Kong and Taiwan text (HKCanCor, CityU and AS)
 
 The HK version is slightly better for Hongkongese, while the HKT version is slightly worse for Hongkongese but a lot better for Standard Chinese text.
 Base and Small sizs are provided for each version. The different in performance is minor so it is recommended to use the Small size unless you found something wrong with it.
 Different from CKIP Transformers, the base model is ELECTRA and not BERT, see `electra-hongkongese <https://github.com/toastynews/electra-hongkongese>`__. It uses a custom vocabulary that is more suited for Hong Kong text.
 
 NLP Task Models
-- `ELECTRA HK Small — Word Segmentation <https://huggingface.co/toastynews/electra-hongkongese-small-hk-ws>`_: ``toastynews/electra-hongkongese-small-hk-ws``
-- `ELECTRA HKT Small — Word Segmentation <https://huggingface.co/toastynews/electra-hongkongese-small-hkt-ws>`_: ``toastynews/electra-hongkongese-small-hkt-ws``
-- `ELECTRA HK Base — Word Segmentation <https://huggingface.co/toastynews/electra-hongkongese-base-hk-ws>`_: ``toastynews/electra-hongkongese-base-hk-ws``   
-- `ELECTRA HKT Base — Word Segmentation <https://huggingface.co/toastynews/electra-hongkongese-base-hkt-ws>`_: ``toastynews/electra-hongkongese-base-hkt-ws``   
+* `ELECTRA HK Small — Word Segmentation <https://huggingface.co/toastynews/electra-hongkongese-small-hk-ws>`_: ``toastynews/electra-hongkongese-small-hk-ws``
+* `ELECTRA HKT Small — Word Segmentation <https://huggingface.co/toastynews/electra-hongkongese-small-hkt-ws>`_: ``toastynews/electra-hongkongese-small-hkt-ws``
+* `ELECTRA HK Base — Word Segmentation <https://huggingface.co/toastynews/electra-hongkongese-base-hk-ws>`_: ``toastynews/electra-hongkongese-base-hk-ws``   
+* `ELECTRA HKT Base — Word Segmentation <https://huggingface.co/toastynews/electra-hongkongese-base-hkt-ws>`_: ``toastynews/electra-hongkongese-base-hkt-ws``   
 
 Model Usage
 ^^^^^^^^^^^
@@ -35,9 +35,9 @@ Training Corpus
 ^^^^^^^^^^^^^^^
 
 The WS task is trained on the following datasets.
-- `HKCanCor <https://pycantonese.org/data.html#built-in-data>`__ - Hong Kong Cantonese Corpus from Nanyang Technological University.
-- `CityU <http://sighan.cs.uchicago.edu/bakeoff2005/>`__ - Hong Kong news text from City University of Hong Kong. Only the training set is used.
-- `AS <http://sighan.cs.uchicago.edu/bakeoff2005/>`__ - Variety of Taiwan Chinese text from Academia Sinica. Only the training set is used.
+* `HKCanCor <https://pycantonese.org/data.html#built-in-data>`__ - Hong Kong Cantonese Corpus from Nanyang Technological University.
+* `CityU <http://sighan.cs.uchicago.edu/bakeoff2005/>`__ - Hong Kong news text from City University of Hong Kong. Only the training set is used.
+* `AS <http://sighan.cs.uchicago.edu/bakeoff2005/>`__ - Variety of Taiwan Chinese text from Academia Sinica. Only the training set is used.
 
 NLP Tools
 ---------
@@ -100,11 +100,11 @@ NLP Tools Performance
 ^^^^^^^^^^^^^^^^^^^^^
 
 The following is a performance comparison between this model and the original model.
-- UD yue_hk - the `yue_hk <https://universaldependencies.org/treebanks/yue_hk/index.html>`__ dataset from Universal Dependencies.
-- UD zh_hk - the `zh_hk <https://universaldependencies.org/treebanks/zh_hk/index.html>`__ dataset from Universal Dependencies.
-- HKCanCor - the same HKCanCor data that this model was trained on. It is only reported for completeness.
-- CityU - the test set from the same CityU corpus.
-- AS - the test set from the same AS corpus.
+* UD yue_hk - the `yue_hk <https://universaldependencies.org/treebanks/yue_hk/index.html>`__ dataset from Universal Dependencies.
+* UD zh_hk - the `zh_hk <https://universaldependencies.org/treebanks/zh_hk/index.html>`__ dataset from Universal Dependencies.
+* HKCanCor - the same HKCanCor data that this model was trained on. It is only reported for completeness.
+* CityU - the test set from the same CityU corpus.
+* AS - the test set from the same AS corpus.
 
 Word Segmentation Performance (F1)
 """"""""""""""""""""""""""""""""""
