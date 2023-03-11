@@ -26,7 +26,13 @@ NLP Task Models
 Model Usage
 ^^^^^^^^^^^
 
-See the `CKIP Transformers <https://github.com/ckiplab/ckip-transformers#model-usage>`__ repo for model usage instructions. The only difference is that it does not use the ``bert-base-chinese`` tokenizer. Simply use ``AutoTokenizer`` from the model.
+You may use our model directly from the HuggingFace's transformers library.
+
+.. code-block:: bash
+
+   pip install -U transformers
+
+See the `CKIP Transformers <https://github.com/ckiplab/ckip-transformers#model-usage>`__ repo for complete instructions. The only difference is that it does not use the ``bert-base-chinese`` tokenizer. Simply use ``AutoTokenizer`` from the model.
 
 Model Fine-Tunning
 ^^^^^^^^^^^^^^^^^^
@@ -45,13 +51,26 @@ The WS task is trained on the following datasets:
 NLP Tools
 ---------
 
-See the `CKIP Transformers <https://github.com/ckiplab/ckip-transformers#nlp-tools>`__ repo for full instructions. 
-The model can be specified by ``model_name`` and it will be downloaded automatically.
+The package also provide the following NLP tools.
+
+* (WS) Word Segmentation
+
+Installation
+^^^^^^^^^^^^
+
+``pip install -U ckip-transformers``
+
+Requirements:
+
+* `Python <https://www.python.org>`__ 3.6+
+* `PyTorch <https://pytorch.org>`__ 1.5+
+* `HuggingFace Transformers <https://huggingface.co/transformers/>`__ 3.5+
 
 NLP Tools Usage (abridged)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The following are the abridged instructions illustrating how to use this model.
+See the `CKIP Transformers <https://github.com/ckiplab/ckip-transformers#nlp-tools>`__ repo for full instructions. The model can be specified by ``model_name`` and it will be downloaded automatically.
+The following are the abridged instructions on how to use this model.
 
 1. Import module
 """"""""""""""""
